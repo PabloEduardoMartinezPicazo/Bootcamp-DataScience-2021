@@ -1,1 +1,7 @@
-
+# todos los archivos y carpetas que no quiero que tenga en cuenta aqui metemos usuarios y contraseñas las estreillas dicen que si contiene la palabra password no lo tnega en cuenta *password*
+#me da igual lo que hay si actiene passwords en el nombre que no lo tengas en cuenta
+#si no pongo los asteriscos, simplemente va a ignrorar la palabra que sea literalmetne pepito no pepito3 o etc
+#con los ** se ignora todo lo que contenga password
+#*pepito no acaba en pepito pepito* si empieza  con esto el archivo 
+#se puede poner carpetas de un tipo x para que no aparezcan
+*password* 
