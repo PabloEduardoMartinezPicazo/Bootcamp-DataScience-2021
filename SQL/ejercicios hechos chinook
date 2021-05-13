@@ -1,0 +1,5 @@
+SELECT Composer,count(*)
+FROM tracks
+WHERE Name LIKE "You%"
+GROUP BY Composer
+-- el group by es para que me lo muestre por lo que se indique 
