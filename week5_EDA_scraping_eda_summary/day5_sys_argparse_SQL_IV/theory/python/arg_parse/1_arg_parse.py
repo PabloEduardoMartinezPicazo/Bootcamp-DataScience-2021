@@ -1,9 +1,9 @@
-import argparse
-from my_module import exponent
+import argparse #es una librera que va arecoger cada uno de los valores que les vayamos a dar el resto son simplemente ejecuciones normales de python
+from my_module import exponent 
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-x", "--x", type=int, help="the base")
-parser.add_argument("-y", "--y", type=int, help="the exponent", required=True)
+parser.add_argument("-y", "--y", type=int, help="the exponent", required=True) #required obligatorio
 parser.add_argument("-v", "--v", default=0, type=int, help="the result will be multiplied by 'v'")
 args = vars(parser.parse_args())
 
