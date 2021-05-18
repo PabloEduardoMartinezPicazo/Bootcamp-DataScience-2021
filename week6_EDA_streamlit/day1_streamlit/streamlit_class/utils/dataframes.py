@@ -16,6 +16,15 @@ def load_csv_df(uploaded_file):
         #st.write("csv Readed¡")
     st.balloons()
     return df
+@st.cache(suppress_st_warning=True)
+def load_normal_csv(uploaded_file):
+    df = None
+    if uploaded_file != None:
+        #uploaded_file.seek(0)
+        df = pd.read_csv(uploaded_file)
+        #st.write("csv Readed¡")
+    st.balloons()
+    return df
 
 @st.cache(suppress_st_warning=True)
 def load_csv_for_map(csv_path):
