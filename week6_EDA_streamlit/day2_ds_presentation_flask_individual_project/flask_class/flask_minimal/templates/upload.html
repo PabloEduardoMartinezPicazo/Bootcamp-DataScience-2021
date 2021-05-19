@@ -1,0 +1,35 @@
+<!DOCTYPE html> <!--tipica estructura de una pagina web para cosas sencillas no es fullstack
+#primer cabecera --> 
+<html lang="en"> <!--lenguaje en ingles --> 
+
+<div class='content'> <!--div es una etiqueta que encaja y que termina con la clase con la que se empieza--> 
+    <h1 style="text-align: left; color: #f31e9a;" >Make your own</h1>
+    <link rel="stylesheet" href="static/css/style.css">
+<div class='content'> <!--poner un color con un titulo, h1 es el titulo "make your own" en rosa--> 
+
+<body style="background-color: #acc9e7;"> <!--color del cuerpo--> 
+
+<form action = "http://localhost:1991/upload_form" method = "POST" enctype = "multipart/form-data"> <!-- viene de formulario, la etiqueta formulario permite hacer una serie de cosas para que el usuario pueda recoger una serie de valores que ha elegido  hay que cambiar el puerto para poder ver que esta todo cambiado y accede al puerto que se quiere. aqui se va a enviar lo que queremos enviar-->
+
+    Choose a Genre <SELECT name="Genre"> <!--select para caundo se seleccione la etiqueta genre y de ahi elegimos una opcion u otra igua lcon las otras 3  -->
+        {% for a in Genre_list %} <!--recorre los valores de genre_list-->
+            <OPTION value={{a}}>{{a}}</option>
+        {% endfor %}
+        </SELECT><br>
+        
+    Choose a Platform <SELECT name="Platform">
+        {% for b in Platform_list %} <!--recorre los valores de platform-->
+            <OPTION value={{b}}>{{b}}</option>
+        {% endfor %}
+        </SELECT><br>
+    
+    Choose a Publisher <SELECT name="Publisher">
+        {% for c in Publisher_list %}<!--recorre los valores de publisher-->
+            <OPTION value={{c}}>{{c}}</option>
+        {% endfor %}
+        </SELECT><br>
+    <input type = "submit"/>
+</form>
+
+</body>
+</html>
