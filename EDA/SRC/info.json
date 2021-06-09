@@ -1,0 +1,11 @@
+{
+    "project_name":"Importancia de los acuerdos comerciales al comercio internacional",
+    "author":"Pablo Eduardo Martínez Picazo",
+    "LinkedIn":"https://www.linkedin.com/in/pabloeduardomartinezpicazo/",
+    "e-mail":"pabloeduardo.martinezpicazo@gmail.com",
+    "Project_title":"La importancia de los acuerdos comerciales internacionales",
+    "flask_port":8080,
+    "Streamlit_port":8501,
+    "Links":"[]",
+    "Python_libraries_used":["pandas","seaborn","sys","os","matplotlib","plotly.express","plotly.subplots"]
+}

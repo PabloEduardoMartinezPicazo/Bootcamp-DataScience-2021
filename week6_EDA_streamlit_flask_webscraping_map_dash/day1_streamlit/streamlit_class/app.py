@@ -12,7 +12,7 @@ path = os.path.dirname(__file__)
 df = None
 menu = st.sidebar.selectbox('Menu:',
             options=["No selected", "Normal Dataframe", "Load Dataframe Columns", "Graphs", "Map"])
-
+st.set_page_config(layout="wide")
 st.title('Wine Quality Classifier Web App')
 st.write('This is a web app to classify the quality of your wine based on\
          several features that you can see in the sidebar. Please adjust the\
